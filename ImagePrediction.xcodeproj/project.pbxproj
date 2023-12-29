@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1275E02B3CE06100FD7D43 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BA1275DF2B3CE06100FD7D43 /* MobileNetV2.mlmodel */; };
+		BA1275E22B3D4EF700FD7D43 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1275E12B3D4EF700FD7D43 /* Double+Extensions.swift */; };
+		BA1275E62B3D4F6900FD7D43 /* ProbabilitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1275E52B3D4F6900FD7D43 /* ProbabilitiesListView.swift */; };
 		BA5AE3DA2B3CBC600073F470 /* ImagePredictionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5AE3D92B3CBC600073F470 /* ImagePredictionApp.swift */; };
 		BA5AE3DC2B3CBC600073F470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5AE3DB2B3CBC600073F470 /* ContentView.swift */; };
 		BA5AE3DE2B3CBC620073F470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5AE3DD2B3CBC620073F470 /* Assets.xcassets */; };
 		BA5AE3E12B3CBC620073F470 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5AE3E02B3CBC620073F470 /* Preview Assets.xcassets */; };
+		BA5AE3E92B3CC2F90073F470 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5AE3E82B3CC2F90073F470 /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1275DF2B3CE06100FD7D43 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		BA1275E12B3D4EF700FD7D43 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		BA1275E52B3D4F6900FD7D43 /* ProbabilitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilitiesListView.swift; sourceTree = "<group>"; };
 		BA5AE3D62B3CBC600073F470 /* ImagePrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5AE3D92B3CBC600073F470 /* ImagePredictionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictionApp.swift; sourceTree = "<group>"; };
 		BA5AE3DB2B3CBC600073F470 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA5AE3DD2B3CBC620073F470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA5AE3E02B3CBC620073F470 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA5AE3E72B3CBD200073F470 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA5AE3E82B3CC2F90073F470 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +41,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA1275E32B3D4F1200FD7D43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA5AE3DB2B3CBC600073F470 /* ContentView.swift */,
+				BA1275E52B3D4F6900FD7D43 /* ProbabilitiesListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA1275E42B3D4F1D00FD7D43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA1275E12B3D4EF700FD7D43 /* Double+Extensions.swift */,
+				BA5AE3E82B3CC2F90073F470 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BA5AE3CD2B3CBC600073F470 = {
 			isa = PBXGroup;
 			children = (
+				BA5AE3E72B3CBD200073F470 /* README.md */,
 				BA5AE3D82B3CBC600073F470 /* ImagePrediction */,
 				BA5AE3D72B3CBC600073F470 /* Products */,
 			);
@@ -51,9 +79,11 @@
 		BA5AE3D82B3CBC600073F470 /* ImagePrediction */ = {
 			isa = PBXGroup;
 			children = (
+				BA1275E42B3D4F1D00FD7D43 /* Extensions */,
+				BA1275E32B3D4F1200FD7D43 /* View */,
 				BA5AE3D92B3CBC600073F470 /* ImagePredictionApp.swift */,
-				BA5AE3DB2B3CBC600073F470 /* ContentView.swift */,
 				BA5AE3DD2B3CBC620073F470 /* Assets.xcassets */,
+				BA1275DF2B3CE06100FD7D43 /* MobileNetV2.mlmodel */,
 				BA5AE3DF2B3CBC620073F470 /* Preview Content */,
 			);
 			path = ImagePrediction;
@@ -137,8 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1275E62B3D4F6900FD7D43 /* ProbabilitiesListView.swift in Sources */,
+				BA5AE3E92B3CC2F90073F470 /* UIImage+Extensions.swift in Sources */,
 				BA5AE3DC2B3CBC600073F470 /* ContentView.swift in Sources */,
+				BA1275E02B3CE06100FD7D43 /* MobileNetV2.mlmodel in Sources */,
 				BA5AE3DA2B3CBC600073F470 /* ImagePredictionApp.swift in Sources */,
+				BA1275E22B3D4EF700FD7D43 /* Double+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
